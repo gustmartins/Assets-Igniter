@@ -11,7 +11,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * @category	Library
  * @author		Gustavo Martins <gustavo_martins92@hotmail.com>
  * @link		https://github.com/GustMartins/Assets-Igniter
- * @version 	1.0.0
+ * @version 	1.0.1
  */
 class Assets {
 
@@ -621,7 +621,7 @@ class Assets {
 				return '<link href="'.base_url($file_url).'" type="text/css" rel="stylesheet" />'."\n";
 			
 			case 'js':
-				return '<script src="'.base_url($file_url).'" type="text/javascript" charset="utf-8" async defer></script>'."\n";
+				return '<script src="'.base_url($file_url).'" type="text/javascript"></script>'."\n";
 		}
 	}
 

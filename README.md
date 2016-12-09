@@ -1,4 +1,5 @@
 # Assets-Igniter
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)]()
 
 Assets-Igniter is the best approach for you to handle external **CSS** and **JS** files. Assets-Igniter is lightweight, simple, and clean, and you can customize it at your will!
 It comes with a helper file to assist you and simplify the process of loading external files! For more information about how to use and customize the library, keep on reading this instructions.
@@ -67,11 +68,11 @@ But if you need to run the library and after that to change the configurations, 
 
 $this->load->library('assets', $config);
 
-$config = array(
-	'css_path' => 'custom/path/to/css/',
-	'js_path' => 'custom/path/to/js/'
+$new_config = array(
+	'css_path' => 'another/path/to/css/',
+	'js_path' => 'another/path/to/js/'
 );
-$this->assets->initialize($config);
+$this->assets->initialize($new_config);
 
 ```
 
@@ -207,7 +208,7 @@ For more information about contributing to the project please, read the [Contrib
 
 ## Change Log
 
-Currently, the Assets-Igniter Library is in the version **1.0.0**. See the full [Changelog][changelog] for more details.
+Currently, the Assets-Igniter Library is in the version **1.0.1**. See the full [Changelog][changelog] for more details.
 
 [GustMartins]: https://github.com/GustMartins
 [contrib]: https://github.com/GustMartins/Assets-Igniter/blob/master/contributing.md
